@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/collapsible.css" />
+    <link rel="stylesheet" href="./styles/sections/hero.css" />
+    <link rel="stylesheet" href="./styles/sections/services.css" />
+    <link rel="stylesheet" href="./styles/sections/about-us.css" />
+    <link rel="stylesheet" href="./styles/sections/contact-us.css" />
+    <link rel="stylesheet" href="./styles/sections/footer.css" />
+
+    <title>Mobile Responsive Landing Page - Bizup</title>
+  </head>
+  <body>
+    <div class="scroll-to-top">
+      <ion-icon name="chevron-up"></ion-icon>
+    </div>
+    <navbar class="navbar">
+      <div class="navbar-brand hover">
+        <img src="./assets/logo-dark.webp" width="140" alt="" />
+      </div>
+      <div class="navbar-icons">
+        <div class="navbar-search hover">
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="navbar-toggle hover">
+          <ion-icon name="apps"></ion-icon>
+        </div>
+      </div>
+      <div class="navbar-content-bg"></div>
+      <div class="navbar-content">
+        <div class="navbar-content-close hover">
+          <ion-icon name="close"></ion-icon>
+        </div>
+
+        <div class="links">
+          <div class="collapse">
+            <div class="collapse-toggle link">
+              Home <ion-icon name="chevron-forward"></ion-icon>
+            </div>
+            <div class="collapse-content">
+              <p>MultiPages</p>
+              <p>OnePages</p>
+            </div>
+          </div>
+          <div class="collapse">
+            <div class="collapse-toggle link">
+              Pages <ion-icon name="chevron-forward"></ion-icon>
+            </div>
+            <div class="collapse-content">
+              <p>About</p>
+              <p>Shop</p>
+              <p>Team</p>
+              <p>Careers</p>
+            </div>
+          </div>
+          <div class="collapse">
+            <div class="collapse-toggle link">
+              Services <ion-icon name="chevron-forward"></ion-icon>
+            </div>
+            <div class="collapse-content">
+              <p>Business consulting</p>
+              <p>Worforce training</p>
+              <p>Financial planning</p>
+              <p>Marketing services</p>
+              <p>Taxation services</p>
+            </div>
+          </div>
+          <div class="collapse">
+            <div class="collapse-toggle link">
+              Contact <ion-icon class="icon" name="chevron-forward"></ion-icon>
+            </div>
+            <div class="collapse-content">
+              <p>Contact 1</p>
+              <p>Contact 2</p>
+              <p>Contact 3</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <div class="location">
+            <ion-icon class="icon" name="map"></ion-icon>
+            <div class="info">
+              <p class="info-title">Location</p>
+              <p>55 Gerad Lane, NY 11201, USA</p>
+            </div>
+          </div>
+          <div class="mail">
+            <ion-icon class="icon" name="mail"></ion-icon>
+            <div class="info">
+              <p class="info-title">Mail us</p>
+              <p>info@bizup.com</p>
+            </div>
+          </div>
+          <div class="call">
+            <ion-icon class="icon" name="map"></ion-icon>
+            <div class="info">
+              <p class="info-title">Call us</p>
+              <p>(+1) 9999 999 999</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </navbar>
+
+    <section class="hero">
+      <!-- Swiper -->
+      <div class="swiper swiperEffect">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="info">
+              <p class="info-subtitle effect1">BUSINESS CONSULTING</p>
+              <p class="info-title effect1">We grow & manage YOUR BUSINESS</p>
+              <button class="button hover">Get Started</button>
+            </div>
+            <img src="./assets/hero-img-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <div class="info">
+              <p class="info-subtitle effect1">WORKFORCE TRAINING</p>
+              <p class="info-title effect1">Upskill your employees</p>
+              <button class="button hover">Get Started</button>
+            </div>
+            <img src="./assets/hero-img-2.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="info">
+        <p class="info-subtitle">MANAGED SERVICES</p>
+        <p class="info-title">
+          More than 30+ years we provide business consulting
+        </p>
+      </div>
+
+      <div class="services-cards">
+        <div class="card">
+          <div class="card-icon"><ion-icon name="card"></ion-icon></div>
+          <div class="card-title">Financial planing</div>
+          <div class="card-description">
+            We always provide people a complete solution upon focused of any
+            business
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon"><ion-icon name="easel"></ion-icon></div>
+          <div class="card-title">Marketing services</div>
+          <div class="card-description">
+            We always provide people a complete solution upon focused of any
+            business.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon"><ion-icon name="calculator"></ion-icon></div>
+          <div class="card-title">Taxation services</div>
+          <div class="card-description">
+            We always provide people a complete solution upon focused of any
+            business
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="intro">
+        <img class="intro-pattern" src="./assets/pattern.png" alt="" />
+        <img
+          class="intro-img"
+          width="340"
+          src="./assets/about-intro-img.jpg"
+          alt=""
+        />
+      </div>
+      <main class="main">
+        <img src="./assets/circles.png" alt="" class="circles" />
+        <div class="info">
+          <p class="info-subtitle">ABOUT US</p>
+          <p class="info-title">
+            We are crafting your unique business consulting ideas
+          </p>
+        </div>
+        <p>
+          We denounce with righteous indignation and dislike men who are so
+          beguiled and demoralized by the charms.
+        </p>
+
+        <div class="collapsibles">
+          <div class="collapse">
+            <h4 class="collapse-toggle hoverable">
+              <ion-icon name="chevron-forward"></ion-icon> Responsive & Pixel
+              Perect Design
+            </h4>
+            <div class="collapse-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo data
+              communication.
+            </div>
+          </div>
+          <div class="collapse">
+            <h4 class="collapse-toggle hoverable">
+              <ion-icon name="chevron-forward"></ion-icon> Create Modern Web Dev
+              Used
+            </h4>
+            <div class="collapse-content">
+              This site is bootstraped with
+              <a href="https://github.com/butadpj/create-modern-web-dev"
+                >create-modern-web-dev</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section class="contact-us">
+      <img
+        class="contact-logo"
+        src="./assets/logo_lite.png"
+        alt=""
+        width="140"
+      />
+
+      <p class="contact-quote">
+        We denounce with righteous indig nation in and dislike men who are so
+        beguiled and to demo realized by the, so blinded by desire, that they
+        cannot foresee.
+      </p>
+
+      <div class="socials">
+        <div class="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="pinterest"><i class="fa-brands fa-pinterest-p"></i></div>
+        <div class="linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div class="contact-section-title">OUR SERVICES</div>
+        <div class="list">
+          <p>Business consulting</p>
+          <p>Worforce training</p>
+          <p>Financial planning</p>
+          <p>Marketing services</p>
+          <p>Taxation services</p>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div class="contact-section-title">CONTACT INFO</div>
+        <div class="list">
+          <p>Ta-134/A, Gulshan Badda Link Rd, Dhaka</p>
+          <p>(+880)155 69569 365</p>
+          <p>support@rstheme.com</p>
+          <p>Office Hours: 8AM - 11PM</p>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div class="contact-section-title">NEWSLETTER</div>
+        <form class="newsletter-form">
+          Stay up to update with our latest news and products.
+
+          <input type="text" placeholder="Your email address" />
+          <button class="button">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      © 2021 Bizup - Consulting Company Inc. All Rights Reserved.
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

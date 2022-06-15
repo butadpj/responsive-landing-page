@@ -1,0 +1,40 @@
+.services {
+  padding: 4rem 1.5rem;
+  background-color: var(--light-1);
+}
+
+.services .info {
+  margin-bottom: 4rem;
+}
+
+.services-cards {
+  display: grid;
+  gap: 2rem;
+}
+
+.services-cards .card {
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: var(--light);
+  border-radius: 5px;
+}
+
+.services-cards .card:hover .card-icon {
+  animation: vertical-wobble 0.7s forwards;
+}
+
+.services-cards .card-icon {
+  color: var(--primary);
+  font-size: 4rem;
+}
+
+.services-cards .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 425px) {
+  .services-cards {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}

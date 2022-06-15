@@ -1,0 +1,49 @@
+.about-us {
+  background-color: var(--light-2);
+  padding: 1rem 0;
+}
+
+.about-us .intro {
+  position: relative;
+  margin-bottom: 20rem;
+}
+
+.about-us .intro-pattern {
+  animation: scale-up-down 5s infinite;
+}
+
+.about-us .intro-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-us .main {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.about-us .main .info {
+  margin-bottom: 2rem;
+}
+
+.about-us .main .circles {
+  position: absolute;
+  top: 40%;
+  left: -15%;
+  animation: slant-wobble 10s infinite;
+}
+
+.about-us .main .collapsibles {
+  margin: 3rem 0;
+}
+
+.about-us .main .collapse-toggle {
+  padding: 1rem 0.5rem;
+  background-color: var(--light);
+}
+
+.about-us .main .collapse-toggle:hover {
+  color: var(--primary-dark);
+}
