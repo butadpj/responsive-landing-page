@@ -1,0 +1,25 @@
+.collapse {
+  border-radius: 5px;
+}
+
+.collapse-content {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapse-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  width: 100%;
+  transition: all ease-out 0.3s;
+}
+
+.collapse-content > * {
+  margin: 1rem 0;
+}
